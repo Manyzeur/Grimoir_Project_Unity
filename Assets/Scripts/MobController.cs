@@ -11,7 +11,7 @@ public class MobController : MonoBehaviour
     {
         get
         {
-            return _bulletTypes;
+            return (_bulletTypes);
         }
     }
 
