@@ -69,4 +69,10 @@ public class CharacterController : MonoBehaviour
         _InputField.ActivateInputField();
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
 }
