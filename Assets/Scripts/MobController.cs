@@ -35,6 +35,6 @@ public class MobController : MonoBehaviour
 
     void DestroyObjectDelayed()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 8);
     }
 }

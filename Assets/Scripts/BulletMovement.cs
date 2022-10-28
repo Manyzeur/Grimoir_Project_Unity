@@ -40,6 +40,9 @@ public class BulletMovement : MonoBehaviour
                 Debug.Log("DEAD");
                 Destroy(other.transform.parent.gameObject);
                 Destroy(gameObject);
+
+                //Trouver le moyen de renvoyer la balle si les types sont les mêmes
+                //transform.position = transform.position - transform.right * _speed * Time.deltaTime;
             }
 
 
