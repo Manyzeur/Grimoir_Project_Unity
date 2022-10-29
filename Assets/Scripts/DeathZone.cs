@@ -23,14 +23,14 @@ public class DeathZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Marche");
+        
         if (other.tag == "Mob")
         {
             _gameOverMenu.SetActive(true);
             _inputField.SetActive(false);
             Time.timeScale = 0;
-            
-            
+            Cursor.visible = true;
+
         }
     }
 }

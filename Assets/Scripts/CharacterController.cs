@@ -18,6 +18,7 @@ public class CharacterController : MonoBehaviour
     {
         transform.position = _posCharacter[1].position;
         _InputField.ActivateInputField();
+        Cursor.visible = false;
     }
     void Update()
     {
