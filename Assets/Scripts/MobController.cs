@@ -24,7 +24,7 @@ public class MobController : MonoBehaviour
     void Update()
     {
         Moving();
-        DestroyObjectDelayed();
+        //DestroyObjectDelayed();
     }
 
     private void Moving()
@@ -33,8 +33,8 @@ public class MobController : MonoBehaviour
 
     }
 
-    void DestroyObjectDelayed()
+    /*void DestroyObjectDelayed()
     {
         Destroy(gameObject, 8);
-    }
+    }*/
 }

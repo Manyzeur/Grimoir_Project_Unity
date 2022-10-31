@@ -16,7 +16,7 @@ public class BulletMovement : MonoBehaviour
     void Update()
     {
         Moving();
-        DestroyObjectDelayed();
+        //DestroyObjectDelayed();
     }
 
     private void Moving()
@@ -24,10 +24,10 @@ public class BulletMovement : MonoBehaviour
         transform.position = transform.position + transform.right * _speed * Time.deltaTime;
     }
 
-    private void DestroyObjectDelayed()
+    /*private void DestroyObjectDelayed()
     {
         Destroy(gameObject, 5);
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
