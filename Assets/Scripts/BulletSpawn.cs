@@ -9,6 +9,8 @@ public class BulletSpawn : MonoBehaviour
     [SerializeField] private GameObject[] _bullet;
     [SerializeField] private Transform _bulletPosition = null;
     [SerializeField] private TMP_InputField _inputField = null;
+    [SerializeField] private Animator _animation = null;
+ 
 
 
     void Start()
@@ -20,6 +22,7 @@ public class BulletSpawn : MonoBehaviour
     void Update()
     {
         Spawnning();
+        
     }
 
     private void Spawnning()
@@ -51,24 +54,35 @@ public class BulletSpawn : MonoBehaviour
     public void OnReadString(string s)
     {
         s = s.ToUpper();
+       
 
         if (s == "FIRE")
         {
             Instantiate(_bullet[0], _bulletPosition.position, Quaternion.identity, _bulletContainer);
+            _animation.SetTrigger("Fire");
+
         }
+
+
 
         if(s == "WATER") 
         {
             Instantiate(_bullet[1], _bulletPosition.position, Quaternion.identity, _bulletContainer);
+            _animation.SetTrigger("Fire");
+
+
         }
 
         if(s == "AIR")
         {
             Instantiate(_bullet[2], _bulletPosition.position, Quaternion.identity, _bulletContainer);
+            _animation.SetTrigger("Fire");
+
         }
 
+
         _inputField.text = string.Empty;
-        
+
     }
 
 }
