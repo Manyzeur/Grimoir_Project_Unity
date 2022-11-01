@@ -1,18 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InterfaceManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+               
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
+
+    public void QuitGame()
+	{
+        Application.Quit();
+	}
+
+    public void RestartGame()
+	{
+        SceneManager.LoadScene("PlayTestScene");
+	}
+
+    public void MainMenu()
+	{
+        SceneManager.LoadScene("MainMenu");
+	}
+
+    public void StartLevel()
+    {
+        SceneManager.LoadScene("PlayTestScene");
+	}
 }

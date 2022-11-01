@@ -73,7 +73,7 @@ public class BulletSpawn : MonoBehaviour
 
         }
 
-        if(s == "AIR")
+        if(s == "WIND")
         {
             Instantiate(_bullet[2], _bulletPosition.position, Quaternion.identity, _bulletContainer);
             _animation.SetTrigger("Fire");

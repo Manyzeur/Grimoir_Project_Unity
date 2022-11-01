@@ -13,7 +13,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private TMP_InputField _InputField = null;
 
     #endregion Attributs
-    #region Start / Update
+
     void Start()
     {
         transform.position = _posCharacter[1].position;
@@ -24,8 +24,7 @@ public class CharacterController : MonoBehaviour
     {
        //Moving();
     }
-    #endregion Start / Update
-
+    #region Moving (old version)
     /*private void Moving()
     {
         bool moveUp = Input.GetKeyDown(KeyCode.Z);
@@ -47,7 +46,7 @@ public class CharacterController : MonoBehaviour
         }
 
     }*/
-
+    #endregion Moving (old version)
     public void OnReadStringMoving(string s) 
     {
         s = s.ToUpper();
@@ -69,11 +68,5 @@ public class CharacterController : MonoBehaviour
         _InputField.text = string.Empty;
         _InputField.ActivateInputField();
     }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
 
 }
