@@ -22,7 +22,7 @@ public class InterfaceManager : MonoBehaviour
 
     public void RestartGame()
 	{
-        SceneManager.LoadScene("PlayTestScene");
+        SceneManager.LoadScene("Lvl01_TheForest");
 	}
 
     public void MainMenu()
@@ -32,6 +32,6 @@ public class InterfaceManager : MonoBehaviour
 
     public void StartLevel()
     {
-        SceneManager.LoadScene("PlayTestScene");
+        SceneManager.LoadScene("Lvl01_TheForest");
 	}
 }
