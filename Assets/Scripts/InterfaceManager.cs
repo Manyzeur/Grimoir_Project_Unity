@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InterfaceManager : MonoBehaviour
 {
+    [SerializeField] private GameObject _tutoMenu;
     void Start()
     {
                
@@ -34,4 +35,12 @@ public class InterfaceManager : MonoBehaviour
     {
         SceneManager.LoadScene("Lvl01_TheForest");
 	}
+
+    /*Tuto
+    public void Tuto()
+    {
+
+    }*/
+
+
 }
