@@ -24,7 +24,8 @@ public class InterfaceManager : MonoBehaviour
     public void RestartGame()
 	{
         SceneManager.LoadScene("Lvl01_TheForest");
-	}
+        Time.timeScale = 1;
+    }
 
     public void MainMenu()
 	{
