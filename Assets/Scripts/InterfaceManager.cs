@@ -8,7 +8,7 @@ public class InterfaceManager : MonoBehaviour
     [SerializeField] private GameObject _tutoMenu;
     void Start()
     {
-               
+
     }
 
     void Update()
