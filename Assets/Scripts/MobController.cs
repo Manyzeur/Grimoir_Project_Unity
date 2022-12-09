@@ -15,26 +15,13 @@ public class MobController : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        
-    }
-
-
     void Update()
     {
         Moving();
-        //DestroyObjectDelayed();
     }
 
     private void Moving()
     {
         transform.position = transform.position - transform.right * _speed * Time.deltaTime;
-
     }
-
-    /*void DestroyObjectDelayed()
-    {
-        Destroy(gameObject, 8);
-    }*/
 }

@@ -11,42 +11,15 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Transform[] _posCharacter = null;
     [SerializeField] private int _index = 1;
     [SerializeField] private TMP_InputField _InputField = null;
-
     #endregion Attributs
 
     void Start()
     {
         transform.position = _posCharacter[1].position;
         _InputField.ActivateInputField();
-        Cursor.visible = false;
-    }
-    void Update()
-    {
-       //Moving();
-    }
-    #region Moving (old version)
-    /*private void Moving()
-    {
-        bool moveUp = Input.GetKeyDown(KeyCode.Z);
-        bool moveDown = Input.GetKeyDown(KeyCode.S);
         
+    }
 
-        if (moveDown && _index < _posCharacter.Length)
-        {
-            _index++;
-            transform.position = _posCharacter[_index].position;
-            Debug.Log("DOWN");
-        }
-
-        if( moveUp && _index > 0)
-        {
-            _index--;
-            transform.position = _posCharacter[_index].position;
-            Debug.Log("UP");
-        }
-
-    }*/
-    #endregion Moving (old version)
     public void OnReadStringMoving(string s) 
     {
         s = s.ToUpper();
@@ -56,7 +29,7 @@ public class CharacterController : MonoBehaviour
             _index++;
             Debug.Log("DOWN");
         }
-
+        
         if(s == "UP")
         {
             _index--;

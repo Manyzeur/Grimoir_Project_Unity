@@ -5,15 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class InterfaceManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _tutoMenu;
-    void Start()
+    [SerializeField] private GameObject _tutoInterface = null;
+    private void Start()
     {
-
+        Time.timeScale = 0;
     }
 
-    void Update()
+    public void PassedTuto()
     {
-        
+        _tutoInterface.SetActive(false);
+        Time.timeScale = 1;
+        Cursor.visible = false;
+    }
+
+    private void OnEnable()
+    {
+        Cursor.visible = true;
+    }
+
+    private void OnDisable()
+    {
+        Cursor.visible = false;
     }
 
     public void QuitGame()
@@ -36,12 +48,5 @@ public class InterfaceManager : MonoBehaviour
     {
         SceneManager.LoadScene("Lvl01_TheForest");
 	}
-
-    /*Tuto
-    public void Tuto()
-    {
-
-    }*/
-
 
 }

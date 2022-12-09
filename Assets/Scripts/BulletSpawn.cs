@@ -5,57 +5,17 @@ using TMPro;
 
 public class BulletSpawn : MonoBehaviour
 {
+    #region Attributs
     [SerializeField] private Transform _bulletContainer = null;
-    [SerializeField] private GameObject[] _bullet;
+    [SerializeField] private GameObject[] _bullet = null;
     [SerializeField] private Transform _bulletPosition = null;
     [SerializeField] private TMP_InputField _inputField = null;
     [SerializeField] private Animator _animation = null;
- 
-
-
-    void Start()
-    {
-        
-    }
-
-
-    void Update()
-    {
-        Spawnning();
-        
-    }
-
-    private void Spawnning()
-    {
-        //bool inputFire = Input.GetKeyDown(KeyCode.F);
-        //bool inputWater = Input.GetKeyDown(KeyCode.W);
-        //bool inputAir = Input.GetKeyDown(KeyCode.A);
-
-        /*if (inputFire)
-        {
-            Debug.Log("FIRE BULLET");
-            Instantiate(_bullet[0], _bulletPosition.position, Quaternion.identity, _bulletContainer);
-        }
-
-        if (inputWater)
-        {
-            Debug.Log("WATER BULLET");
-            Instantiate(_bullet[1], _bulletPosition.position, Quaternion.identity, _bulletContainer);
-        }
-
-        if (inputAir)
-        {
-            Debug.Log("AIR BULLET");
-            Instantiate(_bullet[2], _bulletPosition.position, Quaternion.identity, _bulletContainer);
-        }*/
-
-    }
-
+    #endregion
     public void OnReadString(string s)
     {
         s = s.ToUpper();
-       
-
+      
         if (s == "FIRE")
         {
             Instantiate(_bullet[0], _bulletPosition.position, Quaternion.identity, _bulletContainer);

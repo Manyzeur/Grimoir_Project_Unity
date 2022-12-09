@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class MobSpawn : MonoBehaviour
 {
+    #region Attributs
     [SerializeField] private Transform _mobContainer = null;
     [SerializeField] private float _duration = 2;
     [SerializeField] private Transform[] _spawnPos = null;
     [SerializeField] private GameObject[] _mob = null;
-
-    private float _timeStamp = 0;
-
-    void Start()
-    {
-        
-    }
-
+    [SerializeField] private float _timeStamp = 0;
+    #endregion
 
     void Update()
     {
-        
         Spawnning();
-        
     }
 
     private void Spawnning()

@@ -6,20 +6,10 @@ using TMPro;
 
 public class DeathZone : MonoBehaviour
 {
+    #region Attributs
     [SerializeField] private GameObject _gameOverMenu = null;
     [SerializeField] private GameObject _inputField = null;
-
-    
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
+    #endregion
 
     private void OnTriggerEnter(Collider other)
     {

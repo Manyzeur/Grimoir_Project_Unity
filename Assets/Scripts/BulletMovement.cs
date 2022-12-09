@@ -4,30 +4,20 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour
 {
+    #region Attributs
     [SerializeField] private float _speed = 10f;
     [SerializeField] private EBulletTypes _bulletTypes = EBulletTypes.FIRE;
+    #endregion
 
-    void Start()
-    {
-        
-    }
-
-    
     void Update()
     {
         Moving();
-        //DestroyObjectDelayed();
     }
 
     private void Moving()
     {
         transform.position = transform.position + transform.right * _speed * Time.deltaTime;
     }
-
-    /*private void DestroyObjectDelayed()
-    {
-        Destroy(gameObject, 5);
-    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -41,8 +31,6 @@ public class BulletMovement : MonoBehaviour
                 Destroy(other.transform.parent.gameObject);
                 Destroy(gameObject);
 
-                //Trouver le moyen de renvoyer la balle si les types sont les mêmes
-                //transform.position = transform.position - transform.right * _speed * Time.deltaTime;
             }
 
 
