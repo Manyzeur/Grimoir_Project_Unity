@@ -6,18 +6,14 @@ using TMPro;
 
 public class InterfaceManager : MonoBehaviour
 {
+    #region Attributs
     [SerializeField] private GameObject _tutoInterface = null;
     [SerializeField] private GameObject _gamePause = null;
+    #endregion
     void Start()
     {
         Time.timeScale = 0;
     }
-
-    private void Update()
-    {
-        //PauseGame();
-    }
-
     public void PassedTuto()
     {
         _tutoInterface.SetActive(false);

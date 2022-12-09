@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -2168,9 +2168,9 @@ TextureImporter:
       GhostSpirits_25: 1248449703
       GhostSpirits_40: -1082422042
       GhostSpirits_78: 698173570
-      GhostSpirits_13: -498324389
-      GhostSpirits_43: -1950834919
       GhostSpirits_86: -94130936
+      GhostSpirits_43: -1950834919
+      GhostSpirits_13: -498324389
       GhostSpirits_5: -1062704523
       GhostSpirits_9: 228510630
       GhostSpirits_10: 1495029433
