@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class InterfaceManager : MonoBehaviour
 {
     [SerializeField] private GameObject _tutoInterface = null;
-    private void Start()
+    [SerializeField] private GameObject _gamePause = null;
+    void Start()
     {
         Time.timeScale = 0;
+    }
+
+    private void Update()
+    {
+        //PauseGame();
     }
 
     public void PassedTuto()
@@ -49,4 +56,10 @@ public class InterfaceManager : MonoBehaviour
         SceneManager.LoadScene("Lvl01_TheForest");
 	}
 
+    public void ResumeGame()
+    {
+        _gamePause.SetActive(false);
+        Time.timeScale = 1;
+        Cursor.visible = false;
+    }
 }

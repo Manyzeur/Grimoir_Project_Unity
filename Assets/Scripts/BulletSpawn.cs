@@ -11,6 +11,7 @@ public class BulletSpawn : MonoBehaviour
     [SerializeField] private Transform _bulletPosition = null;
     [SerializeField] private TMP_InputField _inputField = null;
     [SerializeField] private Animator _animation = null;
+    [SerializeField] private GameObject _pauseGame = null;
     #endregion
     public void OnReadString(string s)
     {
@@ -38,6 +39,23 @@ public class BulletSpawn : MonoBehaviour
             Instantiate(_bullet[2], _bulletPosition.position, Quaternion.identity, _bulletContainer);
             _animation.SetTrigger("Fire");
 
+        }
+
+
+        if (s == "PAUSE")
+        {
+            if (_pauseGame.gameObject.activeSelf)
+            {
+                _pauseGame.SetActive(false);
+
+
+            }
+            else
+            {
+                _pauseGame.SetActive(true);
+                Time.timeScale = 0;
+                Cursor.visible = true;
+            }
         }
 
 
