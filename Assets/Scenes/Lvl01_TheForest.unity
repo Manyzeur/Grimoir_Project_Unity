@@ -2302,7 +2302,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24104
+  m_Name: pb_Mesh24078
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4410,6 +4410,10 @@ PrefabInstance:
       objectReference: {fileID: 2118557247}
     - target: {fileID: 9014175011996908039, guid: 59cf5d0dd4c9eb147bfdb1eaaf66e784, type: 3}
       propertyPath: _InputField
+      value: 
+      objectReference: {fileID: 2118557247}
+    - target: {fileID: 9014175011996908039, guid: 59cf5d0dd4c9eb147bfdb1eaaf66e784, type: 3}
+      propertyPath: _inputField
       value: 
       objectReference: {fileID: 2118557247}
     - target: {fileID: 9014175013814854312, guid: 59cf5d0dd4c9eb147bfdb1eaaf66e784, type: 3}
@@ -6908,6 +6912,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 18736923979369559, guid: 7a79b3ace4663f843ac8666328161b5f, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 18736923979369559, guid: 7a79b3ace4663f843ac8666328161b5f, type: 3}
       propertyPath: m_GlobalFontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 2da7a9908f3d6e84f8fc489a3af35868, type: 2}
@@ -6982,6 +6990,10 @@ PrefabInstance:
     - target: {fileID: 18736925007484177, guid: 7a79b3ace4663f843ac8666328161b5f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18736925007484179, guid: 7a79b3ace4663f843ac8666328161b5f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 18736925007484179, guid: 7a79b3ace4663f843ac8666328161b5f, type: 3}
       propertyPath: m_fontSize

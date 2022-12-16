@@ -10,13 +10,13 @@ public class CharacterController : MonoBehaviour
     #region Attributs
     [SerializeField] private Transform[] _posCharacter = null;
     [SerializeField] private int _index = 1;
-    [SerializeField] private TMP_InputField _InputField = null;
+    [SerializeField] private TMP_InputField _inputField = null;
     #endregion Attributs
 
     void Start()
     {
         transform.position = _posCharacter[1].position;
-        _InputField.ActivateInputField();
+        _inputField.ActivateInputField();
         
     }
 
@@ -38,8 +38,8 @@ public class CharacterController : MonoBehaviour
 
         _index = Mathf.Clamp(_index, 0, _posCharacter.Length - 1);
         transform.position = _posCharacter[_index].position;
-        _InputField.text = string.Empty;
-        _InputField.ActivateInputField();
+        _inputField.text = string.Empty;
+        _inputField.ActivateInputField();
     }
 
 }
